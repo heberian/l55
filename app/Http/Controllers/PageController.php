@@ -13,13 +13,4 @@ class PageController extends Controller
     {          
         return view('welcome');
     }
-    public function getSQL()
-    {   
-        $leads  =   \App\Leads::all();
-        foreach($leads as $lead)
-        {
-            echo $lead->unique_lead_id;
-        }
-        return view('welcome');
-    }
 }
